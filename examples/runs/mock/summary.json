@@ -1,0 +1,213 @@
+{
+  "mode": "offline_mock",
+  "model": "deterministic-evidence-policy-v1",
+  "generated_at_utc": "2026-11-04T14:55:28.863267+00:00",
+  "python": "3.11.4",
+  "source_sha256": "378149c88cc23bf639abc154a0320d91dabfae12c2ae11a0430ce071953201d5",
+  "duration_seconds": 0.125,
+  "passed": 14,
+  "total": 14,
+  "cases": [
+    {
+      "case": "normal",
+      "expected": "answered",
+      "actual": "answered",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "supported_value": true
+      },
+      "passed": true,
+      "result": "normal/result.json"
+    },
+    {
+      "case": "conflict",
+      "expected": "conflict",
+      "actual": "conflict",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "conflicting_both_cited": true,
+        "pagination_observed": true
+      },
+      "passed": true,
+      "result": "conflict/result.json"
+    },
+    {
+      "case": "outside",
+      "expected": "out_of_scope",
+      "actual": "out_of_scope",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "no_unsupported_answer": true
+      },
+      "passed": true,
+      "result": "outside/result.json"
+    },
+    {
+      "case": "paraphrase",
+      "expected": "conflict",
+      "actual": "conflict",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "conflicting_both_cited": true
+      },
+      "passed": true,
+      "result": "paraphrase/result.json"
+    },
+    {
+      "case": "context",
+      "expected": "answered",
+      "actual": "answered",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "latest_user_scope": true
+      },
+      "passed": true,
+      "result": "context/result.json"
+    },
+    {
+      "case": "scope",
+      "expected": "needs_info",
+      "actual": "needs_info",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true
+      },
+      "passed": true,
+      "result": "scope/result.json"
+    },
+    {
+      "case": "read_retry",
+      "expected": "answered",
+      "actual": "answered",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "supported_value": true
+      },
+      "passed": true,
+      "result": "read_retry/result.json"
+    },
+    {
+      "case": "tool_failure",
+      "expected": "tool_failed",
+      "actual": "tool_failed",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "no_unsupported_answer": true
+      },
+      "passed": true,
+      "result": "tool_failure/result.json"
+    },
+    {
+      "case": "single_document",
+      "expected": "answered",
+      "actual": "answered",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "replacement_changes_value": true
+      },
+      "passed": true,
+      "result": "single_document/result.json"
+    },
+    {
+      "case": "replaced_document",
+      "expected": "answered",
+      "actual": "answered",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "replacement_changes_value": true
+      },
+      "passed": true,
+      "result": "replaced_document/result.json"
+    },
+    {
+      "case": "permissions",
+      "expected": "answered",
+      "actual": "answered",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true
+      },
+      "passed": true,
+      "result": "permissions/result.json"
+    },
+    {
+      "case": "process",
+      "expected": "answered",
+      "actual": "answered",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true
+      },
+      "passed": true,
+      "result": "process/result.json"
+    },
+    {
+      "case": "unsupported_detail",
+      "expected": "out_of_scope",
+      "actual": "out_of_scope",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "no_unsupported_answer": true
+      },
+      "passed": true,
+      "result": "unsupported_detail/result.json"
+    },
+    {
+      "case": "step_limit",
+      "expected": "incomplete_step_limit",
+      "actual": "incomplete_step_limit",
+      "checks": {
+        "expected_status": true,
+        "bounded": true,
+        "citations_are_read_originals": true,
+        "no_archived_citation": true,
+        "no_unsupported_answer": true
+      },
+      "passed": true,
+      "result": "step_limit/result.json"
+    }
+  ],
+  "boundary": "Synthetic documents and restricted extractive grammar. Mock tests flow only; live decisions require actual trace review.",
+  "unit_tests": {
+    "run": 30,
+    "passed": true,
+    "failures": 0,
+    "errors": 0
+  }
+}

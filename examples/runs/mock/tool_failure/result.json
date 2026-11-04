@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "mode": "offline_mock",
+  "model": "deterministic-evidence-policy-v1",
+  "request": {
+    "request_id": "tool_failure",
+    "question": "报销期限多久？",
+    "history": []
+  },
+  "resolved_question": "报销期限多久？",
+  "dataset_sha256": "9885533fb7640b2e0ef27c79281b80ef142de12653fca0aa0938d349d0f0167a",
+  "status": "tool_failed",
+  "answer": "知识工具多次失败，当前无法可靠回答。已读取片段保留，不能据部分资料排除冲突。",
+  "citations": [],
+  "data_gaps": [
+    "请稍后重试检索或联系制度负责人。"
+  ],
+  "stop_reason": "finished",
+  "error": null,
+  "model_calls": 3,
+  "max_steps": 24,
+  "trace": [
+    {
+      "step": 1,
+      "action": {
+        "tool": "search_documents",
+        "arguments": {
+          "query": "报销",
+          "cursor": 0
+        },
+        "rationale": "检索主题并补查所有页，避免遗漏冲突"
+      },
+      "observation": {
+        "ok": false,
+        "code": "TOOL_UNAVAILABLE",
+        "tool": "search_documents"
+      },
+      "next_action": "search_documents"
+    },
+    {
+      "step": 2,
+      "action": {
+        "tool": "search_documents",
+        "arguments": {
+          "query": "报销",
+          "cursor": 0
+        },
+        "rationale": "检索主题并补查所有页，避免遗漏冲突"
+      },
+      "observation": {
+        "ok": false,
+        "code": "TOOL_UNAVAILABLE",
+        "tool": "search_documents"
+      },
+      "next_action": "respond"
+    },
+    {
+      "step": 3,
+      "action": {
+        "tool": "respond",
+        "arguments": {
+          "status": "tool_failed",
+          "claim_ids": []
+        },
+        "rationale": "工具持续不可用，保留证据并明确失败"
+      },
+      "observation": {
+        "ok": true,
+        "code": "RESPONSE_READY",
+        "status": "tool_failed"
+      },
+      "next_action": "stop"
+    }
+  ],
+  "read_document_ids": [],
+  "boundary": "Synthetic policies, lexical retrieval and extractive answers. Mock verifies workflow only; no hidden reasoning persisted."
+}

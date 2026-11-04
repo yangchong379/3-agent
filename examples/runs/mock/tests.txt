@@ -1,0 +1,35 @@
+test_http_body_never_leaked (test_adapter.TestAdapter.test_http_body_never_leaked) ... ok
+test_insecure_base_url_rejected (test_adapter.TestAdapter.test_insecure_base_url_rejected) ... ok
+test_multiple_calls_rejected (test_adapter.TestAdapter.test_multiple_calls_rejected) ... ok
+test_observation_provider_id_and_memory_reasoning_replay (test_adapter.TestAdapter.test_observation_provider_id_and_memory_reasoning_replay) ... ok
+test_answer_has_exact_original (test_knowledge.TestKnowledge.test_answer_has_exact_original) ... ok
+test_archived_not_used (test_knowledge.TestKnowledge.test_archived_not_used) ... ok
+test_bad_citation_is_rejected_then_model_can_correct (test_knowledge.TestKnowledge.test_bad_citation_is_rejected_then_model_can_correct) ... ok
+test_bad_history_rejected (test_knowledge.TestKnowledge.test_bad_history_rejected) ... ok
+test_conflict_newer_is_not_authority (test_knowledge.TestKnowledge.test_conflict_newer_is_not_authority) ... ok
+test_different_scope_requests_clarification (test_knowledge.TestKnowledge.test_different_scope_requests_clarification) ... ok
+test_document_instructions_not_executed (test_knowledge.TestKnowledge.test_document_instructions_not_executed) ... ok
+test_duplicate_document_id_rejected (test_knowledge.TestKnowledge.test_duplicate_document_id_rejected) ... ok
+test_extraction_ignores_negated_or_embedded_claim (test_knowledge.TestKnowledge.test_extraction_ignores_negated_or_embedded_claim) ... ok
+test_model_error_not_mock_fallback (test_knowledge.TestKnowledge.test_model_error_not_mock_fallback) ... ok
+test_negative_cursor_rejected (test_knowledge.TestKnowledge.test_negative_cursor_rejected) ... ok
+test_no_history_followup (test_knowledge.TestKnowledge.test_no_history_followup) ... ok
+test_outside_searches_twice (test_knowledge.TestKnowledge.test_outside_searches_twice) ... ok
+test_pagination_cannot_hide_conflict (test_knowledge.TestKnowledge.test_pagination_cannot_hide_conflict) ... ok
+test_premature_answer_needs_broad_search (test_knowledge.TestKnowledge.test_premature_answer_needs_broad_search) ... ok
+test_protocol_recovery (test_knowledge.TestKnowledge.test_protocol_recovery) ... ok
+test_read_failure_partial_not_answered (test_knowledge.TestKnowledge.test_read_failure_partial_not_answered) ... ok
+test_read_requires_search (test_knowledge.TestKnowledge.test_read_requires_search) ... ok
+test_read_transient_failure_recovers (test_knowledge.TestKnowledge.test_read_transient_failure_recovers) ... ok
+test_replacement_changes_answer (test_knowledge.TestKnowledge.test_replacement_changes_answer) ... ok
+test_scope_followup_without_user_context (test_knowledge.TestKnowledge.test_scope_followup_without_user_context) ... ok
+test_search_permanent_failure_explicit (test_knowledge.TestKnowledge.test_search_permanent_failure_explicit) ... ok
+test_step_cap (test_knowledge.TestKnowledge.test_step_cap) ... ok
+test_synonym (test_knowledge.TestKnowledge.test_synonym) ... ok
+test_unsupported_detail_not_deadline (test_knowledge.TestKnowledge.test_unsupported_detail_not_deadline) ... ok
+test_user_context_overrides_assistant_claim (test_knowledge.TestKnowledge.test_user_context_overrides_assistant_claim) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.037s
+
+OK

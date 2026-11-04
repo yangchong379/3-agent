@@ -1,0 +1,14 @@
+{
+  "request_id": "context",
+  "question": "那专业版呢？",
+  "history": [
+    {
+      "role": "user",
+      "content": "标准版视频导出最长多少分钟？"
+    },
+    {
+      "role": "assistant",
+      "content": "根据已读取制度：\n[D04 · 2026-06-01 · 标准版] 单次视频导出时长上限为10分钟。"
+    }
+  ]
+}
