@@ -1,0 +1,150 @@
+{
+  "reviewer": "Codex AI audit of actual local outputs; not independent human sign-off",
+  "reviewed_at_utc": "2026-11-04T17:47:57.654813+00:00",
+  "metrics": {
+    "passed": 14,
+    "total": 14,
+    "failed_cases": []
+  },
+  "checks": {
+    "source_fingerprint_matches_current": true,
+    "actual_citations_or_facts_valid": true,
+    "latest_checks_valid": true,
+    "model_calls_bounded": true,
+    "raw_output_count_matches": true
+  },
+  "issues": [],
+  "records": [
+    {
+      "case": "conflict",
+      "status": "conflict",
+      "calls": 9,
+      "protocol_rejections": 1
+    },
+    {
+      "case": "context",
+      "status": "answered",
+      "calls": 5,
+      "protocol_rejections": 1
+    },
+    {
+      "case": "normal",
+      "status": "answered",
+      "calls": 3,
+      "protocol_rejections": 0
+    },
+    {
+      "case": "outside",
+      "status": "out_of_scope",
+      "calls": 6,
+      "protocol_rejections": 1
+    },
+    {
+      "case": "paraphrase",
+      "status": "conflict",
+      "calls": 10,
+      "protocol_rejections": 1
+    },
+    {
+      "case": "permissions",
+      "status": "answered",
+      "calls": 3,
+      "protocol_rejections": 0
+    },
+    {
+      "case": "process",
+      "status": "answered",
+      "calls": 3,
+      "protocol_rejections": 0
+    },
+    {
+      "case": "read_retry",
+      "status": "answered",
+      "calls": 4,
+      "protocol_rejections": 0
+    },
+    {
+      "case": "replaced_document",
+      "status": "answered",
+      "calls": 8,
+      "protocol_rejections": 1
+    },
+    {
+      "case": "scope",
+      "status": "needs_info",
+      "calls": 5,
+      "protocol_rejections": 1
+    },
+    {
+      "case": "single_document",
+      "status": "answered",
+      "calls": 14,
+      "protocol_rejections": 1
+    },
+    {
+      "case": "step_limit",
+      "status": "incomplete_step_limit",
+      "calls": 1,
+      "protocol_rejections": 0
+    },
+    {
+      "case": "tool_failure",
+      "status": "tool_failed",
+      "calls": 3,
+      "protocol_rejections": 0
+    },
+    {
+      "case": "unsupported_detail",
+      "status": "out_of_scope",
+      "calls": 11,
+      "protocol_rejections": 1
+    }
+  ],
+  "files_sha256": {
+    "summary.json": "41b9d13ac164c3e0ef017d5beeb745725031a12ea3be64d39cefbe9beedd54fd",
+    "conflict/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "conflict/input.json": "83a0ec71927246c75df09177f57876d9cf0d62efb2ffc2bb1e603aab46facb49",
+    "conflict/result.json": "5de85ac5e1eb7dd5927f6016a2d8b10ed6778d17f55f3c06f2ecd85dcc5fc70c",
+    "context/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "context/first_run.json": "45e6e94b8d751380bba7c6c0f81bf638dd85a0425a9e0186d283321b28fd8d55",
+    "context/input.json": "d6f6102d0411bce11a6fd415ec7226b66aca2d85a1384003549976d16fc09e70",
+    "context/result.json": "baf67b9b728fdb2389469c416475dc2609fca69db93cc327de8a61c6f5b62795",
+    "normal/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "normal/input.json": "96ea859d587af7c0c9a8241e8e48703e0d8ebfa4912e7e2d74d8f3c3e6ce43c8",
+    "normal/result.json": "e17de0eb2f519ad7cc5829a7281ef59c2dd4eb16c2fb273cc7af49accc913475",
+    "outside/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "outside/input.json": "6d68c4a08f329cf2d9f9c45cd11b3b6c9d634b4a7321d4cdf677ff31c9568e0f",
+    "outside/result.json": "9d731d08e7299314c924f835d2b0f9e72cfece0d86085c27130997f3260b6ea8",
+    "paraphrase/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "paraphrase/input.json": "21221e699c523f73af821524535be0c10801672d8f59a1a7188893b347a8e474",
+    "paraphrase/result.json": "6a9d4b26de8232bb21cd1325d459f2a7edfea4abe92d3ed282fed96a86809c66",
+    "permissions/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "permissions/input.json": "a3c5fda6169f008ea7a1138ede98ea26d86af77028a4034349bb364745e6bd55",
+    "permissions/result.json": "9fa90ca226a410207943b100864f292b565acdf73376e460bc5ba7913dd2c424",
+    "process/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "process/input.json": "197e91880bb82b8092648e0255250e04210af615ebe34996d508cafa01fd1f2b",
+    "process/result.json": "570721ff0f4dfcdf81add3be05881994125ba689531cc92d9b41c0c0bf8a520b",
+    "read_retry/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "read_retry/input.json": "cbde6aa9b62c5f08a886c539c6043daee735e375bc451b1ae9304d731c35145d",
+    "read_retry/result.json": "94a4ad67f70552cdbcf927e74c405cee18e9b85749a79e4e766027b7720a6c89",
+    "replaced_document/dataset.json": "aa23557bd226d685699ce9d66462e8ab789af9d9d976b280b8c221b3366a2407",
+    "replaced_document/input.json": "2de176e6dcf42964e3fc7a2250c0fc951c4459c3700af1da242c194246f531a9",
+    "replaced_document/result.json": "bb1d2e33f1febfa7fd0d5ecbfae9a3730adf6d7e5d98dab4cfc2b0161c06f82c",
+    "scope/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "scope/input.json": "9e18ecbc2d6b372dfe632301ace5c52162dbf1adacd439787db0232f9a2b9e5f",
+    "scope/result.json": "14a431795e367179b114635e9815a0e89423f7c4b892d9bc58dc8ed2b9a3ff78",
+    "single_document/dataset.json": "8e576c310cbfe0c7f56267599c9864917aa3129303c983bfc6d7a4b59051553a",
+    "single_document/input.json": "384208361954b75b46a94fc5f806cc2ca46c472fa8b4c71d0402ce189c504671",
+    "single_document/result.json": "a23775848d190187c2b8b492ab3bfda3dca8ca7c0a695e175f839cf02e3e05c9",
+    "step_limit/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "step_limit/input.json": "a377220cc6f509a841200b6c7ce5bee68cc3142b5fde409d38d81e6b1e7ccbc7",
+    "step_limit/result.json": "8272bec596284969e848bbfe9f4978594fba23e4164517c5fd62d88676312c91",
+    "tool_failure/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "tool_failure/input.json": "97c77e8967844c877f78ffda968f59508268c0a7d24efe66f2b5d2ce73448f35",
+    "tool_failure/result.json": "5de80f59636d48e0db5e597d1989219ad34a0e4b49e7be0c686cdd2c21201b33",
+    "unsupported_detail/dataset.json": "754199e66ae071c3f5dd8ce6033ea0a5645c45badae8a9c1f7741f991e69d27e",
+    "unsupported_detail/input.json": "414063851e66518da6cd2f343956e52f55c2f112ef4615194597f1315085b49c",
+    "unsupported_detail/result.json": "324fab4a5472dcdc3df105614fe663abbb80b2dd7fe2728215bf1f5727c3d78d"
+  },
+  "scope": "Actual remote model with synthetic tools/data; not production reliability proof."
+}
